@@ -1,4 +1,4 @@
-package com.xing.principle.dependencyinversion02;
+package com.xing.principle.dependencyinversion_02;
 
 public class TestProgrammer extends Programmer {
     @Override
