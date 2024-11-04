@@ -44,7 +44,7 @@
 
 #### （4）接口隔离原则
 
- **(Interface Segregation Principle, ISP)**
+ **(Interface Segregation Principle, ISP)** （interfacesegregation_04）
 
 * 用多个接口，而不是使用单一的接口；
 * 尽量细化接口，接口中的方法尽量少；
@@ -90,3 +90,5 @@
 
 
 ## 99+ P5~P58
+
+YYDS：https://www.bilibili.com/video/BV1iK4y1F7hY
