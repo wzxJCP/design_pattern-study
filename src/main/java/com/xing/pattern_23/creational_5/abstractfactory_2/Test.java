@@ -9,3 +9,6 @@ public class Test {
         car.make();
     }
 }
+/**
+ * 2.1.2 抽象工厂模式
+ */
