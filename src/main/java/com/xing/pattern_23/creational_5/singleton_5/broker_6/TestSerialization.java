@@ -36,7 +36,7 @@ public class TestSerialization {
         // DoubleCheckSingleton objInstance1 = (DoubleCheckSingleton) ois.readObject();
         // 静态内部类
         // StaticInnerClassSingleton objInstance2 = (StaticInnerClassSingleton) ois.readObject();
-        // 饿汉式获
+        // 饿汉式
         HungrySingleton objInstance3 = (HungrySingleton) ois.readObject();
         // 枚举
         // EnumSingleton objInstance4 = (EnumSingleton) ois.readObject();
