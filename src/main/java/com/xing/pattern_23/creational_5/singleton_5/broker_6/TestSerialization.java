@@ -1,10 +1,6 @@
 package com.xing.pattern_23.creational_5.singleton_5.broker_6;
 
-import com.xing.pattern_23.creational_5.singleton_5.doublechecked_2.DoubleCheckSingleton;
-import com.xing.pattern_23.creational_5.singleton_5.enumsingleton_5.EnumSingleton;
 import com.xing.pattern_23.creational_5.singleton_5.hungry_4.HungrySingleton;
-import com.xing.pattern_23.creational_5.singleton_5.lazy_1.LazySingleton;
-import com.xing.pattern_23.creational_5.singleton_5.staticinnerclass_3.StaticInnerClassSingleton;
 
 import java.io.*;
 
@@ -14,7 +10,7 @@ import java.io.*;
  * @author：wzx
  */
 // 方法一：序列化和反序列的方式破坏单例模式
-public class TestSerializer {
+public class TestSerialization {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         // 使用懒汉式获取单例对象实例
         // LazySingleton instance = LazySingleton.getInstance();
