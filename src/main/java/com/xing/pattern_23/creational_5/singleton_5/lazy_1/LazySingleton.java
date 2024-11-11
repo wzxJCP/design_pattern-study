@@ -20,7 +20,6 @@ public class LazySingleton implements Serializable {
      * 获取单例实例的方法。
      * 使用 synchronized 关键字保证线程安全。
      * 只有当 instance 为 null 时才创建新的实例。
-     *
      * @return 单例实例
      * @author xing
      */
@@ -35,7 +34,6 @@ public class LazySingleton implements Serializable {
     /**
      * 实现 Serializable 接口，并重写 readResolve 方法。
      * 这是为了防止反序列化时创建新的实例，确保单例的唯一性。
-     *
      * @return 单例实例
      */
     private Object readResolve(){

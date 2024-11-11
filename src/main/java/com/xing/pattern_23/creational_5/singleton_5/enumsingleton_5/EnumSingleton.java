@@ -5,7 +5,7 @@ public enum EnumSingleton {
     INSTANCE;
 
     // 静态方法，用于获取单例对象实例
-    static EnumSingleton getInstance() {
+    public static EnumSingleton getInstance() {
         // 返回枚举常量 INSTANCE
         return INSTANCE;
     }
