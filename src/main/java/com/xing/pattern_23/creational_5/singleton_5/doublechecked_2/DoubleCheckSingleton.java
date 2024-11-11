@@ -15,7 +15,11 @@ public class DoubleCheckSingleton implements Serializable {
     private static volatile DoubleCheckSingleton doubleCheckSingleton = null;
 
     // 私有的构造函数，防止外部直接实例化
-    private DoubleCheckSingleton() {}
+    private DoubleCheckSingleton(){
+        if(doubleCheckSingleton == null){
+            throw new RuntimeException("不允许通过反射,创建单例对象。");
+        }
+    }
 
     // 公有的静态方法，用于获取单例对象实例
     public static DoubleCheckSingleton getInstance() {

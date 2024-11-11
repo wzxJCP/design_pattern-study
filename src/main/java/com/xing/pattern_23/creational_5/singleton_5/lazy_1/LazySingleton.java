@@ -10,11 +10,11 @@ public class LazySingleton implements Serializable {
      * 私有构造方法，防止外部直接实例化。
      * 通过检查 instance 是否为 null 来防止反射调用。
      */
-    // private LazySingleton(){
-    //     if(instance != null){
-    //         throw new RuntimeException("单例构造器禁止反射调用");
-    //     }
-    // }
+    private LazySingleton(){
+        if(instance == null){
+            throw new RuntimeException("不允许通过反射,创建单例对象。");
+        }
+    }
 
     /**
      * 获取单例实例的方法。

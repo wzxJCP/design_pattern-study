@@ -14,13 +14,12 @@ public class StaticInnerClassSingleton implements Serializable {
         private static StaticInnerClassSingleton staticInnerClassSingleton = new StaticInnerClassSingleton();
     }
 
-    // // 私有的构造函数，防止外部直接实例化
-    // private StaticInnerClassSingleton() {
-    //     // 防止通过反射创建多个实例
-    //     if (InnerClass.staticInnerClassSingleton != null) {
-    //         throw new RuntimeException("不允许通过反射创建单例对象");
-    //     }
-    // }
+    // 私有的构造函数，防止外部直接实例化
+    private StaticInnerClassSingleton() {
+        if(InnerClass.staticInnerClassSingleton == null){
+            throw new RuntimeException("不允许通过反射,创建单例对象");
+        }
+    }
 
     // 公有的静态方法，用于获取单例对象实例
     public static StaticInnerClassSingleton getInstance() {

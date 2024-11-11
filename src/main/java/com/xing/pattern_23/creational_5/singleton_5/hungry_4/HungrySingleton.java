@@ -15,8 +15,8 @@ public class HungrySingleton implements Serializable {
     // 私有的构造函数，防止外部直接实例化
     private HungrySingleton() {
         // 防止通过反射创建多个实例
-        if (hungrySingleton != null) {
-            throw new RuntimeException("单例构造器禁止反射调用");
+        if(hungrySingleton == null){
+            throw new RuntimeException("不允许通过反射,创建单例对象。");
         }
     }
 
