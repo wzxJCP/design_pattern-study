@@ -18,7 +18,7 @@ public class AudioPlayer implements MediaPlayer {
             //调用适配器的play方法
             adapter.play(audioType,fileName);
         }else{
-            System.out.println("暂不支持该格式："+audioType);
+            System.out.println("暂不支持该格式文件："+audioType);
         }
     }
 }

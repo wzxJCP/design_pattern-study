@@ -13,6 +13,7 @@ public class Test {
         audioPlayer.play("mp3", "中国人.mp3");
         audioPlayer.play("vlc", "中国人.vlc");
         audioPlayer.play("mp4", "中国人.mp4");
+        audioPlayer.play("avi", "中国人.avi");
     }
 }
 
@@ -20,6 +21,7 @@ public class Test {
  * 播放 mp3 文件：中国人.mp3
  * 播放 vlc 文件: 中国人.vlc
  * 播放 mp4 文件: 中国人.mp4
+ * 暂不支持该格式文件：avi
  */
 /**
  * MediaPlayer播放器接口
