@@ -20,5 +20,6 @@ public class Test {
         TackingSystem tackingSystem = new TackingSystem();
         // 调用 TackingSystem 的 orderTaking 方法处理订单
         tackingSystem.orderTaking(food);
+        System.out.println("订单处理完成！");
     }
 }
