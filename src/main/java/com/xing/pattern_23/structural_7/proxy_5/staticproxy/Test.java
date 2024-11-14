@@ -8,7 +8,7 @@ package com.xing.pattern_23.structural_7.proxy_5.staticproxy;
 public class Test {
     public static void main(String[] args) {
         Order order = new Order();
-        order.setInfo("123");
+        order.setInfo("订单信息,购买手机100台");
         order.setUserId("1");
         OrderServiceImplStaticProxy proxy = new OrderServiceImplStaticProxy();
         proxy.saveOrder(order);
@@ -18,7 +18,7 @@ public class Test {
  * 代理对象...开启事务...
  * 代理对象...调用业务层等...
  * 业务层调用持久层...
- * 插入订单成功。Order{info='123', userId='1'}
+ * 插入订单成功。Order{info='订单信息,购买手机100台', userId='1'}
  * 代理对象...提交事务...
  */
 
