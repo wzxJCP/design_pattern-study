@@ -6,4 +6,5 @@ package com.xing.pattern_23.behavioral.templatemethod_1;
  * @author：wzx
  */
 public class AClass {
+    // ttt
 }
