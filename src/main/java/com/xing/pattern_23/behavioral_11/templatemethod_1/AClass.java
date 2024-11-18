@@ -1,4 +1,4 @@
-package com.xing.pattern_23.behavioral.templatemethod_1;
+package com.xing.pattern_23.behavioral_11.templatemethod_1;
 
 /**
  * @project：design_pattern-study
