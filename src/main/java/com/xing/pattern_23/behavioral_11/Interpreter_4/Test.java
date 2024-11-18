@@ -30,3 +30,11 @@ public class Test {
         System.out.println("王五是否已婚?》》》》》：" + andExpression.interpret("wangwu married"));
     }
 }
+
+/**
+ * 张三是一个男人吗?》》》：true
+ * 王五是否已婚?》》》》》：true
+ */
+/**
+ * 2.3.4 解释器模式（Interpreter Pattern）
+ */
