@@ -19,7 +19,7 @@ public class Test {
         AClass h = new H5Class();
         // 调用 makeClass() 方法，执行制作课程的流程
         h.makeClass();
-        System.out.println("-------------");
+        System.out.println("=============");
 
     }
 }

@@ -266,7 +266,7 @@
 
 #### 2.3.1 模板方法模式（Template Pattern）
 
-()
+(templatemethod_1)
 
 定义了一个算法的架构，并允许子类为一个或多个步骤的实现；
 模板方法在子类不改变算法结构的情况下，重新定义算法的某些步骤；
@@ -337,6 +337,6 @@
 
 
 
-## 99+ P38~P58 ；21
+## 99+ P39~P58 ；20
 
 YYDS：https://www.bilibili.com/video/BV1iK4y1F7hY
