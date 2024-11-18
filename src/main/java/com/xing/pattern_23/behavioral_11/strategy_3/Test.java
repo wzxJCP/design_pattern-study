@@ -27,3 +27,7 @@ public class Test {
  * 10 - 5 = 5
  * 10 * 5 = 50
  */
+
+/**
+ * 2.3.3 策略模式（Strategy Pattern）
+ */
