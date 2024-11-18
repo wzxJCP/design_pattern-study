@@ -285,8 +285,7 @@
 （）
 
 定义了算法，分别封装起来，它们之间可以相互替换，让算法的变化不会影响到使用算法的用户；
-如果有大量的if...else...else if...可以通过策略模式进行替换；
-避免使用多重条件转语句，if...else if...else；
+如果有大量的if...else...else if...可以通过策略模式进行替换，避免使用多重条件转语句，if...else if...else；
 提高算法的保密性和安全性。
 
 #### 2.3.4 解释器模式（Interpreter Pattern）
@@ -341,6 +340,6 @@
 
 
 
-## 99+ P40~P58 ；19
+## 99+ P42~P58 ；17
 
 YYDS：https://www.bilibili.com/video/BV1iK4y1F7hY
