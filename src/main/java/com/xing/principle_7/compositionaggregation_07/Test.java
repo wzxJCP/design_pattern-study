@@ -35,3 +35,6 @@ public class Test {
  * 使用微信通知家长
  * 父母去开家长会。
  */
+/**
+ * （7）合成复用原则（Composite Reuse Principle）
+ */
