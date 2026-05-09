@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.dependencyinversion_02;
+package com.xing.a_principle_7.a_03_dependencyinversion;
 
 public abstract class Programmer implements Human {
     @Override
