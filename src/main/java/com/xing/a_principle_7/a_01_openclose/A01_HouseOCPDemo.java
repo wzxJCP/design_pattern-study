@@ -83,7 +83,7 @@ public class A01_HouseOCPDemo {
         // 获取当前时间
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        System.out.println("开闭原则（OCP）演示 - 房子加装功能");
+        System.out.println("【1、开闭原则（OCP）演示 - 房子加装功能】");
         System.out.println("当前时间：" + now.format(formatter)+ "\n");
 
         // 1.先盖一栋房子（基础系统）
