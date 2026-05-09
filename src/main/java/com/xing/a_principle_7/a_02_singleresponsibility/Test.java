@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.singleresponsibility_03;
+package com.xing.a_principle_7.a_02_singleresponsibility;
 
 public class Test {
     public static void main(String[] args) {
