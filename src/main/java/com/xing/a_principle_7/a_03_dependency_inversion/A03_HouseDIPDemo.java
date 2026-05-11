@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.a_03_dependencyinversion;
+package com.xing.a_principle_7.a_03_dependency_inversion;
 
 /** （3）依赖倒置原则（Dependence Inversion Principle）
  * 核心思路
