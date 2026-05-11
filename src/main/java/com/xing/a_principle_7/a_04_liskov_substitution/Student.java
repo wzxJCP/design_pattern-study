@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.liskovsubstitution_06;
+package com.xing.a_principle_7.a_04_liskov_substitution;
 
 public class Student extends Human {
     // 声明一个私有的 Teacher 类型的成员变量

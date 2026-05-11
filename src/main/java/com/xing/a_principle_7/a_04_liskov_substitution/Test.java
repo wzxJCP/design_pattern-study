@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.liskovsubstitution_06;
+package com.xing.a_principle_7.a_04_liskov_substitution;
 
 public class Test {
     public static void main(String[] args) {

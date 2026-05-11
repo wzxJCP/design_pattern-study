@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.liskovsubstitution_06;
+package com.xing.a_principle_7.a_04_liskov_substitution;
 
 public class Student_1 extends Person_1 {
     private int grade;
