@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.a_01_openclose;
+package com.xing.a_principle_7.a_01_open_close;
 
 /**
  * 设计模式-7大原则

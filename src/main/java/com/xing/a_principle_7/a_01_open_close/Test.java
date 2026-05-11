@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.a_01_openclose;
+package com.xing.a_principle_7.a_01_open_close;
 
 public class Test {
     public static void main(String[] args) {

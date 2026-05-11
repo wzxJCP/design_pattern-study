@@ -1,11 +1,11 @@
-package com.xing.a_principle_7.a_01_openclose;
+package com.xing.a_principle_7.a_01_open_close;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /** （1）开闭原则（Open Close Principle）
  * 核心思路
- * 1. 抽象接口（契约）：HouseFunction 接口定义了房子可以具备的“行为”（execute() 方法）；
+ * 1. 抽象接口（契约）：HouseFunction 接口定义了房子可以具备 的“行为”（execute() 方法）；
  * 2. 对扩展开放：新增“电梯”行为时，只需新建 Elevator 类实现该接口；
  * 3. 对修改关闭：房子本体（House 类）和已有行为（如 Heating 供暖）的代码，一行都不需要修改。
  */
