@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.a_02_singleresponsibility;
+package com.xing.a_principle_7.a_02_single_responsibility;
 
 /** （2）单一职责原则（Single Responsibility Principle，SRP）
  * 核心思路
