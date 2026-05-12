@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.compositionaggregation_07;
+package com.xing.a_principle_7.a_07_composite_reuse;
 
 public class Test {
     public static void main(String[] args) {
