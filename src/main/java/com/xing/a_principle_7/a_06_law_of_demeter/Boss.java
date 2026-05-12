@@ -1,4 +1,4 @@
-package com.xing.a_principle_7.demeter_05;
+package com.xing.a_principle_7.a_06_law_of_demeter;
 
 public class Boss implements Manager {
     public void meet(TeamLeader teamLeader) {
