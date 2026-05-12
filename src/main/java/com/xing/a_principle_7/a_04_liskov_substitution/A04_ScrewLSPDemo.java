@@ -152,65 +152,13 @@ public class A04_ScrewLSPDemo {
 }
 
 /**
- * 代码逻辑:
- * 1.父类定标准（Screw 必须能拧紧）。
- * 2.子类做实现（有的达标，有的滑丝）。
- * 3.客户端做测试（证明了如果不遵循LSP，程序虽然能跑，但结果是不可接受的）。
- *
- * 第一步：定义父类（矩形）
- * 矩形类承诺了两个方法：setWidth 和 setHeight，它们互不影响。
- * class Rectangle {
- *     protected int width;
- *     protected int height;
- *     public void setWidth(int w) {
- *         this.width = w;
- *     }
- *     public void setHeight(int h) {
- *         this.height = h;
- *     }
- *     public int getArea() {
- *         return width * height;
- *     }
- * }
- * 第二步：定义子类（正方形）
- * 正方形继承矩形，但为了保持“四边相等”，它必须重写父类的方法，强制同步宽高。
- * class Square extends Rectangle {
- *     // 构造时宽高相等
- *     public Square(int side) {
- *         this.width = side;
- *         this.height = side;
- *     }
- *     // 破坏契约点1：设置宽度时，被迫修改高度
- *     @Override
- *     public void setWidth(int w) {
- *         this.width = w;
- *         this.height = w; // 必须同步修改！
- *     }
- *     // 破坏契约点2：设置高度时，被迫修改宽度
- *     @Override
- *     public void setHeight(int h) {
- *         this.height = h;
- *         this.width = h;  // 必须同步修改！
- *     }
- * }
- * 第三步：客户端调用（车祸现场）
- * 客户端代码是基于矩形的契约写的，它认为宽和高是独立的。
- * public void testRectangle(Rectangle r) {
- *     // 1. 设置宽为 5
- *     r.setWidth(5);
- *     // 2. 设置高为 10
- *     r.setHeight(10);
- *     // 3. 计算面积
- *     // 预期逻辑：宽是5，高是10，面积应该是 50
- *     System.out.println("面积是: " + r.getArea());
- * }
- * 如果传入的是 Rectangle 对象：
- * 宽=5, 高=10 -> 面积 50。✅符合预期。
- * 如果传入的是 Square 对象（里氏替换）：
- * 调用 r.setWidth(5)：正方形为了保持形状，把宽和高都设为 5。
- * 调用 r.setHeight(10)：正方形为了保持形状，把宽和高都设为 10（此时宽也被改成了10）。
- * 计算面积：宽=10, 高=10 -> 面积 100。❌ 逻辑崩塌！
- * 结果： 客户端明明设置了宽5高10
+ * 里氏替换原则（LSP）的核心一句话总结：
+ * 子类必须能够替换父类，且替换后程序的行为逻辑依然正确，不会破坏父类定义的行为契约。
+ * 结合代码理解：
+ * 就像螺丝钉代码一样，Furniture 类（客户端）期望任何 Screw（父类）都能被拧紧。
+ * BrandAScrew（子类）遵守了这个契约，所以替换成功；而 InferiorScrew（劣质子类）虽然语法上继承了父类，
+ * 但行为上破坏了“能拧紧”这个契约（导致滑丝），这就是违反了 LSP。
+ * 简单来说，继承不仅要“长得像”（属性），更要“做得对”（行为）。
  *
  * “正方形不是矩形” 告诉我们：
  * 在代码世界里，行为的兼容性比数学的分类学更重要。如果子类无法在不破坏逻辑的前提下替换父类，
