@@ -110,6 +110,13 @@ public class A01_HouseOCPDemo {
         System.out.println("✅ 开闭原则验证成功！");
         System.out.println("✅ 新增电梯和智能门锁时，没有修改任何已有代码！");
         System.out.println("✅ 承重墙（House类、Heating类、WaterSupply类）完好无损！");
-
     }
 }
+
+/**
+ * 开闭原则（OCP）的核心一句话总结：
+ * 软件实体（类、模块、函数等）应该对扩展开放，对修改关闭。
+ * 结合代码理解：
+ * 就像房子代码一样，当需要新增“电梯”或“智能门锁”功能时，你是通过增加新的类（Elevator, SmartDoorLock）来实现的，
+ * 而不是去修改已经写好的 House 类或 Heating 类的源代码。这就是“对扩展开放，对修改关闭”。
+ */
