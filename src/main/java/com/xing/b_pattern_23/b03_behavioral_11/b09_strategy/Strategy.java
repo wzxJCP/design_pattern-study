@@ -1,4 +1,4 @@
-package com.xing.b_pattern_23.b03_behavioral_11.strategy_3;
+package com.xing.b_pattern_23.b03_behavioral_11.b09_strategy;
 
 /**
  * @project：design_pattern-study
