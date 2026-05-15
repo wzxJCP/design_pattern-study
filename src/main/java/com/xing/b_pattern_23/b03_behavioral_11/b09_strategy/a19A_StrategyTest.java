@@ -30,7 +30,7 @@ class ShortWheelCar extends Car {
     }
 }
 
-public class a19_StrategyTest {
+public class a19A_StrategyTest {
     public static void main(String[] args) {
         ShortWheelBrake brake = new ShortWheelBrake();
         ShortWheelCar car = new ShortWheelCar(brake);
