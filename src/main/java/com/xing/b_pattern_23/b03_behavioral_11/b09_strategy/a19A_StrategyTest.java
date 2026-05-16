@@ -1,5 +1,9 @@
 package com.xing.b_pattern_23.b03_behavioral_11.b09_strategy;
 
+/**
+ * 策略模式
+ */
+
 interface BrakeBehavior {
     public void stop();
 }
